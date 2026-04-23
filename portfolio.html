@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio | Luxurya Infotech</title>
+
+    <meta name="description"
+        content="Luxurya Infotech is a leading web development company in Surat offering MERN stack development, mobile apps, UI/UX design, and digital marketing services across India.">
+    <meta name="keywords"
+        content="Luxurya Infotech, web development company Surat, MERN stack developer India, app development company, digital marketing services India">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Luxurya Infotech">
+    <link rel="canonical" href="https://luxuryainfotech.com/">
+
+    <!-- Favicon (use your own domain) -->
+    <link rel="icon" type="image/png" href="https://luxuryainfotech.com/images/logo-img-1.jpg">
+
+    <!-- Theme -->
+    <meta name="theme-color" content="#0f172a">
+
+    <!-- Open Graph -->
+    <meta property="og:site_name" content="Luxurya Infotech">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://luxuryainfotech.com/">
+    <meta property="og:image" content="https://luxuryainfotech.com/images/logo-img-1.jpg">
+    <meta property="og:image" content="https://luxuryainfotech.com/images/og-banner.jpg">
+    <meta property="og:title" content="Best Web Development Company in Surat | Luxurya Infotech">
+    <meta property="og:description"
+        content="Professional web development, app development & digital marketing services to grow your business.">
+    <meta property="og:image" content="https://luxuryainfotech.com/images/logo-img-1.jpg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Luxurya Infotech - IT Solutions Company">
+    <meta name="twitter:description" content="Grow your business with modern web & app solutions.">
+    <meta name="twitter:image" content="https://luxuryainfotech.com/images/logo-img-1.jpg">
+
+    <!-- Local SEO -->
+    <meta name="geo.region" content="IN-GJ">
+    <meta name="geo.placename" content="Surat">
+    <meta name="geo.position" content="21.1702;72.8311">
+    <meta name="ICBM" content="21.1702, 72.8311">
+
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Portfolio filter active state with JS */
+        .pf-btn {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- TOP BAR -->
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-inner">
+                <div class="top-info">
+                    <a href="mailto:info@luxuryainfotech.com"><i style="background: linear-gradient( white, red);-webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent;" class="fas fa-envelope"></i>
+                        info@luxuryainfotech.com</a>
+                    <span class="separator">|</span>
+                    <a href="tel:+919157618902"><i class="fas fa-phone-alt"
+                            style="transform: scaleX(-1); color: #339933;"></i> +91 91576 18902</a>
+                </div>
+                <div class="top-right">
+                    <span class="work-hours"><i class="far fa-clock"></i> Mon–Sat: 9:00 AM – 6:00 PM</span>
+                    <div class="top-socials">
+                        <a href="https://www.instagram.com/luxurya_infotech/"><i style="color: rgb(225, 40, 40);"
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61570994831835"><i style="color: #1877F2;"
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://wa.me/919157618902"><i style="color: #25D366;" class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <nav id="navbar">
+        <div class="container">
+            <div class="nav-inner">
+                <a class="nav-logo" href="index.html">
+                    <div class="logo-mark"><img style="width:40px;height:40px;" src="images/logo-img-1.jpg"
+                            alt="Luxurya Infotech"></div>
+                    <span>LUXURYA INFOTECH</span>
+                </a>
+                <div class="nav-links">
+                    <a class="nav-link" href="index.html" data-page="home">Home</a>
+                    <a class="nav-link" href="about.html" data-page="about">About</a>
+                    <div class="nav-dropdown">
+                        <a class="nav-link" href="services.html" data-page="services">Services <i
+                                class="fas fa-chevron-down" style="font-size:.65rem;margin-left:3px"></i></a>
+                        <div class="nav-dropdown-menu">
+                            <div class="dropdown-item" onclick="location.href='services.html#web'"><i
+                                    class="fas fa-globe"></i> Web Development</div>
+                            <div class="dropdown-item" onclick="location.href='services.html#app'"><i
+                                    class="fas fa-mobile-alt"></i> App Development</div>
+                            <div class="dropdown-item" onclick="location.href='services.html#ecommerce'"><i
+                                    class="fas fa-shopping-cart"></i> E-Commerce Systems</div>
+                            <div class="dropdown-item" onclick="location.href='services.html#digital'"><i
+                                    class="fas fa-chart-line"></i> Digital Marketing & SEO</div>
+                            <div class="dropdown-item" onclick="location.href='services.html#it'"><i
+                                    class="fas fa-shield-alt"></i> IT Support & Security</div>
+                        </div>
+                    </div>
+                    <a class="nav-link active" href="portfolio.html" data-page="portfolio">Portfolio</a>
+                    <a class="nav-link" href="team.html" data-page="team">Our Team</a>
+                    <a class="nav-link" href="contact.html" data-page="contact">Contact</a>
+                </div>
+                <a class="btn btn-primary nav-cta" href="contact.html">Get Started <i
+                        class="fas fa-arrow-right"></i></a>
+                <button class="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <a class="mobile-nav-link" href="index.html"><i class="fas fa-home" style="color:#61DAFB"></i> Home</a>
+        <a class="mobile-nav-link" href="about.html"><i class="fas fa-user" style="color:#61DAFB"></i> About</a>
+        <a class="mobile-nav-link" href="services.html"><i class="fas fa-cogs" style="color:#61DAFB"></i> Services</a>
+        <a class="mobile-nav-link" href="portfolio.html"><i class="fas fa-briefcase" style="color:#61DAFB"></i>
+            Portfolio</a>
+        <a class="mobile-nav-link" href="team.html"><i class="fas fa-users" style="color:#61DAFB"></i> Our Team</a>
+        <a class="mobile-nav-link" href="contact.html"><i class="fas fa-envelope" style="color:#61DAFB"></i> Contact</a>
+    </div>
+
+    <section class="page-hero">
+        <div class="page-hero-bg"></div>
+        <div class="container" style="position:relative;z-index:2">
+            <div class="breadcrumb"><span onclick="showPage('home')" style="cursor:pointer"><a
+                        href="index.html">Home</a></span><i class="fas fa-chevron-right"
+                    style="font-size:.7rem"></i><span>Portfolio</span></div>
+            <h1>Our Portfolio - Luxurya Infotech</h1>
+            <p>A Curated Selection of Our Proudest Work Across Industries and Technologies.</p>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="cert-white-section">
+        <div class="container">
+            <div class="section-header-clean">
+                <span class="badge-tech"><i style="margin-right: 5px;" class="fas fa-graduation-cap"></i>Academic
+                    Excellence</span>
+                <h2 class="title-dark">Professional Qualifications</h2>
+                <p class="subtitle-grey">Validating our Expertise Through Industry-standard Certifications.</p>
+            </div>
+
+            <div class="cert-grid-modern">
+                <div class="cert-card-white fade-in">
+                    <div class="cert-status">Verified</div>
+                    <div class="cert-img-container">
+                        <img src="images/dot-net-certi.jpg" alt=".net">
+                    </div>
+                    <div class="cert-body">
+                        <h3>.Net Development</h3>
+                        <p class="issuer">Authorized by: VNSGU University</p>
+                        <div class="cert-footer">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card-white fade-in">
+                    <div class="cert-status">Verified</div>
+                    <div class="cert-img-container">
+                        <img src="images/web-design-certi.jpg" alt="UI/UX Certificate">
+                    </div>
+                    <div class="cert-body">
+                        <h3>Web Design</h3>
+                        <p class="issuer">Authorized by: VNSGU University</p>
+                        <div class="cert-footer">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card-white fade-in">
+                    <div class="cert-status">Verified</div>
+                    <div class="cert-img-container">
+                        <img src="images/java-certi.jpg" alt="JavaScript Certificate">
+
+                    </div>
+                    <div class="cert-body">
+                        <h3>Java Development</h3>
+                        <p class="issuer">Authorized by: VNSGU University</p>
+                        <div class="cert-footer">
+                            <span class="year">2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header centered fade-in">
+                <div class="eyebrow"><i class="fas fa-briefcase"></i>Our Work</div>
+                <h2 class="section-title">Showcasing Our <span class="hl">Digital Excellence</span></h2>
+                <p style="max-width:700px; margin: 20px auto;">
+                    From Intuitive Web Applications to Powerful Digital Marketing Campaigns, we've Helped Businesses
+                    Transform Their Ideas Into Reality. Explore Our Latest Success Stories.
+                </p>
+            </div>
+
+            <div class="portfolio-filter fade-in" style="text-align: center; margin: 40px 0 50px 0;">
+                <button style="background-color: rgb(221, 176, 93); color: white;" class="pf-btn active"
+                    data-category="all" onclick="filterPortfolio(this,'all')">All Projects</button>
+                <button class="pf-btn" onclick="filterPortfolio(this,'web')">Web Development</button>
+                <button class="pf-btn" onclick="filterPortfolio(this,'app')">App Development</button>
+                <button class="pf-btn" onclick="filterPortfolio(this,'ecommerce')">E-Commerce</button>
+                <button class="pf-btn" onclick="filterPortfolio(this,'marketing')">Digital Marketing</button>
+            </div>
+        </div>
+    </section>
+    <div class="portfolio-grid" id="portfolio-grid"></div>
+    <div class="portfolio-container">
+        <!-- Card 1 -->
+        <div class="card" data-category="ecommerce">
+            <img src="images/card-1.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">E-Commerce</span>
+                <h3>ShopEase – E-Commerce Platform</h3>
+                <p>Full-featured Online Store With Payment Gateway, Inventory & Mobile App For a Fashion Brand.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card" data-category="web">
+            <img src="images/card-2.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Web Development</span>
+                <h3>GymPro Online Ordering</h3>
+                <p>Custom Membership And Class Booking System For a Chain of Fitness Centers.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card" data-category="app">
+            <img src="images/card-3.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">App Development</span>
+                <h3>FoodRush Delivery App</h3>
+                <p>Multi-vendor Food Delivery App For Android & iOS With Real-time Tracking and Payment.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card" data-category="marketing">
+            <img src="images/card-4.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Digital Marketing</span>
+                <h3>TechStart SEO Campaign</h3>
+                <p>300% Organic Traffic Growth in 6 Months Through Comprehensive SEO and Content Strategy.</p>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card" data-category="web">
+            <img src="images/card-5.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Web Development</span>
+                <h3>MediCare Hospital Website</h3>
+                <p>Modern Healthcare Portal With Appointment Booking, Doctor Profiles, and Patient Portal.</p>
+            </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="card" data-category="web">
+            <img src="images/card-6.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Web Development</span>
+                <h3>Cafe Website</h3>
+                <p>Award-winning Portfolio Site for a Creative Agency with Stunning Animations and CMS.</p>
+            </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="card" data-category="app">
+            <img src="images/card-7.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">App Development</span>
+                <h3>EduLearn Mobile App</h3>
+                <p>E-learning Platform With Video Courses, Quizzes, Progress Tracking For 10,000+ Students.</p>
+            </div>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="card" data-category="marketing">
+            <img src="images/card-8.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Digital Marketing</span>
+                <h3>Local Biz Google Ads</h3>
+                <p>₹5L ad Spend Generating ₹40L Revenue — 8x ROAS For a Local Retail Chain.</p>
+            </div>
+        </div>
+
+        <!-- Card 9 -->
+        <div class="card" data-category="web">
+            <img src="images/card-9.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Web Development</span>
+                <h3>Ayodhya Fitness Gym Website</h3>
+                <p>A Visually Engaging Platform That Connects Customers With Delicious Offerings and An Easy-to-use
+                    Online Ordering System.</p>
+            </div>
+        </div>
+
+        <!-- Card 10 -->
+        <div class="card" data-category="web">
+            <img src="images/card-10.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Web Development</span>
+                <h3>Restaurant Website</h3>
+                <p>A Modern Restaurant Website Designed to Showcase Menu Items, Enhance Customer Engagement, and
+                    Enable Seamless Online Reservations and Ordering.</p>
+            </div>
+        </div>
+
+        <!-- Card 11 -->
+        <div class="card" data-category="web">
+            <img src="images/card-11.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">Web Development</span>
+                <h3>School / College Management System</h3>
+                <p>An Advanced Management Platform Empowering Institutions to Automate Workflows, Improve
+                    Efficiency, and Deliver a Seamless Educational Experience.</p>
+            </div>
+        </div>
+
+        <!-- Card 12 -->
+        <div class="card" data-category="app">
+            <img src="images/card-12.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">App Development</span>
+                <h3>E-learning Mobile Application</h3>
+                <p>An Advanced Mobile Platform Offering Personalized Learning Experiences, Interactive Modules, and
+                    Data-driven Insights for Better Outcomes.</p>
+            </div>
+        </div>
+
+        <!-- Card 13 -->
+        <div class="card" data-category="app">
+            <img src="images/card-13.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">App Development</span>
+                <h3>Fitness & Workout Tracking App</h3>
+                <p>A Scalable Fitness Platform Enabling Users to Monitor Activity, Analyze Performance, and Maintain
+                    a Structured Wellness Routine.</p>
+            </div>
+        </div>
+
+        <!-- Card 14 -->
+        <div class="card" data-category="ecommerce">
+            <img src="images/card-14.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">E-Commerce</span>
+                <h3>Multi-Vendor E-Commerce Marketplace</h3>
+                <p>A Powerful Marketplace Solution Connecting Multiple Vendors and Customers with Smooth
+                    Transactions and Centralized Management.</p>
+            </div>
+        </div>
+
+        <!-- Card 15 -->
+        <div class="card" data-category="ecommerce">
+            <img src="images/card-15.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">E-Commerce</span>
+                <h3>Fashion Brand Online Store</h3>
+                <p>Streamlining Educational Administration with Intuitive Interfaces and Comprehensive Features.</p>
+            </div>
+        </div>
+
+        <!-- Card 16 -->
+        <div class="card" data-category="ecommerce">
+            <img src="images/card-16.jpg" alt="text">
+            <div class="card-content">
+                <span class="category">E-Commerce</span>
+                <h3>Grocery Delivery Web App</h3>
+                <p>“A User-friendly Web Application Designed to Simplify Grocery Shopping with Seamless Ordering,
+                    Real-time Tracking, and Efficient Doorstep Delivery.”</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="nav-logo" onclick="showPage('home')">
+                        <div class="logo-mark"><img style="width:40px;height:40px;" src="images/logo-img-1.jpg"
+                                alt="text">
+                        </div>
+                        <span>LUXURYA INFOTECH</span>
+                    </div>
+                    <p>Transforming Modern Businesses Through Intelligent, Scalable IT Solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/luxurya_infotech"
+                            style="display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:#E1306C;color:white;margin:5px;font-size:18px;">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <a href="https://wa.me/919157618902"
+                            style="display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:#25D366;color:white;margin:5px;font-size:18px;">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=61570994831835"
+                            style="display:inline-block;width:40px;height:40px;line-height:40px;text-align:center;border-radius:50%;background:#1877F2;color:white;margin:5px;font-size:18px;">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><span onclick="showPage('home')"> <a href="index.html">Home</a></span></li>
+                        <li><span onclick="showPage('about')"><a href="about.html">About</a></span></li>
+                        <li><span onclick="showPage('services')"><a href="services.html">Services</a></span></li>
+                        <li><span onclick="showPage('portfolio')"><a href="portfolio.html">Portfolio</a></span></li>
+                        <li><span onclick="showPage('team')"><a href="team.html">Our Team</a></span></li>
+                        <li><span onclick="showPage('contact')"><a href="contact.html">Contact</a></span></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><span onclick="showServiceDetail('web')"><a href="services.html#web">Web
+                                    Development</a></span></li>
+                        <li><span onclick="showServiceDetail('app')"><a href="services.html#app">App
+                                    Development</a></span></li>
+                        <li><span onclick="showServiceDetail('ecommerce')"><a
+                                    href="services.html#ecommerce">E-Commerce</a></span></li>
+                        <li><span onclick="showServiceDetail('digital')"><a href="services.html#digital">Digital
+                                    Marketing</a></span></li>
+                        <li><span onclick="showServiceDetail('it')"><a href="services.html#it">IT Services</a></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><span><a href="tel:+919157618902">📞 +91 91576 18902</a></span></li>
+                        <li><span>📍 A5 402, GardenVeli, Sudama chowk , Mota Varachha , Surat.</span></li>
+                        <li><span><a href="mailto:info@luxuryainfotech.com">📧 info@luxuryainfotech.com</a></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">"© 2026 Luxurya Infotech. All Rights Reserved. | Empowering Brands Through
+                Innovation."</div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        function filterPortfolio(btn, category) {
+
+            // Active button change
+            const buttons = document.querySelectorAll('.pf-btn');
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // All cards select
+            const cards = document.querySelectorAll('.portfolio-container .card');
+
+            cards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+
+                if (category === 'all' || cardCategory === category) {
+                    card.style.display = "block";
+                } else {
+                    card.style.display = "none";
+                }
+            });
+        }
+
+        // Page load par default ALL show
+        window.addEventListener('load', function () {
+            filterPortfolio(document.querySelector('.pf-btn.active'), 'all');
+        });
+    </script>
+</body>
+
+</html>
